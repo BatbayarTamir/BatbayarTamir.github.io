@@ -27,7 +27,7 @@ const FULL_CLOSING_TEXT = "That's it, A heartfelt gift for you.";
 
 export const EndingPage: React.FC<EndingPageProps> = ({
   herName,
-  hisName = 'Batbayar',
+  hisName = 'Tamir',
   herNickname,
   isActive = false,
   onRestart,
@@ -330,11 +330,11 @@ export const EndingPage: React.FC<EndingPageProps> = ({
         </div>
 
         <p className="font-serif text-base sm:text-lg text-rose-950 leading-relaxed">
-          Even if distance, busy schedules, or circumstance keep us apart right now, I built this sanctuary so you would always have a place to come back to—a quiet reminder of how deeply loved and appreciated you truly are.
+          Even if distance, busy schedules, or circumstance keep us apart right now, I built this sanctuary so you would always have a place to come back to a quiet reminder of how deeply loved and appreciated you truly are.
         </p>
 
         <p className="font-serif text-base sm:text-lg text-rose-950 leading-relaxed">
-          May your year ahead be showered with endless laughter, gentle days, and every secret dream you hold in your heart. You deserve all the tenderness this world can offer.
+          May your year ahead be showered with endless joy, gentle days, and every secret dream you hold in your heart. You deserve all the tenderness this world can offer.
         </p>
 
         {/* Signature & Wax Seal */}
@@ -347,7 +347,7 @@ export const EndingPage: React.FC<EndingPageProps> = ({
           <div className="flex items-center gap-3">
             {/* Embossed Wax Seal Badge */}
             <div className="w-10 h-10 rounded-full bg-gradient-to-br from-red-600 to-rose-700 text-white font-serif font-black text-xs flex items-center justify-center shadow-md border-2 border-red-300/60 rotate-[-6deg]">
-              <span>B♡S</span>
+              <span>S♡T</span>
             </div>
             <span className="font-serif font-bold text-lg sm:text-xl text-rose-950">
               {hisName} ♡
