@@ -28,7 +28,7 @@ export const IntroPage: React.FC<IntroPageProps> = ({ herName, herNickname, isAc
   // Typewriter states
   const title1Full = "Happy Birthday,";
   const title2Word = herNickname || herName || "Beloved";
-  const subtitleFull = "To my favorite person in the entire world. A quiet, loving corner designed to celebrate the magic of you.";
+  const subtitleFull = "To my favorite person in the entire world. A small gift for you to celebrate your existence.";
 
   const [title1Text, setTitle1Text] = useState("");
   const [title2Text, setTitle2Text] = useState("");
