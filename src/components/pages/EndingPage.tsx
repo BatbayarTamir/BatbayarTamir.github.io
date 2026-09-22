@@ -23,7 +23,7 @@ interface Particle {
   vy: number;
 }
 
-const FULL_CLOSING_TEXT = "That's it, A heartfelt gift for you.";
+const FULL_CLOSING_TEXT = "That's it, A heartfelt gift for you. Saruul.";
 
 export const EndingPage: React.FC<EndingPageProps> = ({
   herName,
