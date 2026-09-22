@@ -8,7 +8,7 @@
     "tone": "dreamy",
     "lyricsSnippet": "Like a soft spring breeze finding its way home...",
     "accentColor": "#fb7185",
-    "audioUrl": "./audio/song-1.mp3"
+    "audioUrl": "./audio/03. Dear, My Feelings.mp3"
   },
   {
     "id": "song-waiting",
@@ -19,7 +19,7 @@
     "tone": "nostalgic",
     "lyricsSnippet": "I’ll be waiting right here for you, beneath the golden sky...",
     "accentColor": "#6366f1",
-    "audioUrl": "./audio/song-waiting.mp3"
+    "audioUrl": "./audio/Waiting For You (Bonus Track).mp3"
   },
   {
     "id": "song-5",
@@ -41,7 +41,7 @@
     "tone": "energetic",
     "lyricsSnippet": "Feel the rhythm bouncing, electrifying the heartbeat with high-voltage groove...",
     "accentColor": "#06b6d4",
-    "audioUrl": "./audio/song-nexz.mp3"
+    "audioUrl": "./audio/NEXZ(넥스지) Mmchk M V.mp3"
   },
   {
     "id": "song-saucin",
@@ -52,6 +52,6 @@
     "tone": "energetic",
     "lyricsSnippet": "Saucin on the beat, pure heat dripping with the mustard and spice...",
     "accentColor": "#eab308",
-    "audioUrl": "./audio/song-saucin.mp3"
+    "audioUrl": "./audio/NEXZ(넥스지) SAUCIN' M V.mp3"
   }
 ]
