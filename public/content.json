@@ -57,7 +57,7 @@
   "memories": [
     {
       "id": "mem-1",
-      "imageUrl": "public/images/Screenshot_2026-09-22-23-29-38-984_com.miui.gallery.jpg",
+      "imageUrl": "https://files.catbox.moe/c0wrln.jpg",
       "caption": "You started liking me!?",
       "date": "Unidentified",
       "location": "School",
@@ -66,7 +66,7 @@
     },
     {
       "id": "mem-2",
-      "imageUrl": "public/images/Screenshot_2026-09-22-23-29-38-984_com.miui.gallery.jpg",
+      "imageUrl": "https://files.catbox.moe/c0wrln.jpg",
       "caption": "Asked me out thorugh a chat",
       "date": "May 20nd",
       "location": "Via TikTok",
@@ -75,7 +75,7 @@
     },
     {
       "id": "mem-3",
-      "imageUrl": "public/images/Screenshot_2026-09-22-23-30-06-758_com.miui.gallery_1790091020153edit.jpg",
+      "imageUrl": "https://files.catbox.moe/0tyc3n.jpg",
       "caption": "Success!",
       "date": "May 22nd",
       "location": "Outside school, via chat!",
@@ -84,7 +84,7 @@
     },
     {
       "id": "mem-4",
-      "imageUrl": "public/images/malatang.jpg",
+      "imageUrl": "https://files.catbox.moe/18kogj.jpg",
       "caption": "Last encounter",
       "date": "June 12th",
       "location": "Malatang?",
