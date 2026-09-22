@@ -11,17 +11,6 @@
     "audioUrl": "./audio/03. Dear, My Feelings.mp3"
   },
   {
-    "id": "song-waiting",
-    "title": "Waiting for you",
-    "artist": "Alex G",
-    "duration": "3:12",
-    "dedication": "For the quiet afternoons, the gentle longing, and knowing every moment waiting for you was worth it.",
-    "tone": "nostalgic",
-    "lyricsSnippet": "I’ll be waiting right here for you, beneath the golden sky...",
-    "accentColor": "#6366f1",
-    "audioUrl": "./audio/Waiting For You (Bonus Track).mp3"
-  },
-  {
     "id": "song-5",
     "title": "Lofi Starry Night",
     "artist": "Midnight Chimes",
