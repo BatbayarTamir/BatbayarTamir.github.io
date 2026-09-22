@@ -11,16 +11,16 @@
     "audioUrl": "./audio/03. Dear, My Feelings.mp3"
   },
   {
-    "id": "song-5",
-    "title": "Lofi Starry Night",
-    "artist": "Midnight Chimes",
-    "duration": "2:58",
-    "dedication": "For our late night conversations when neither of us wants to say goodbye.",
-    "tone": "dreamy",
-    "lyricsSnippet": "Underneath a blanket of stars, counting my blessings one by one...",
-    "accentColor": "#ec4899",
-    "audioUrl": "./audio/song-5.mp3"
-  },
+    "id": "song-waiting",
+    "title": "Waiting for you",
+    "artist": "Alex G",
+    "duration": "3:12",
+    "dedication": "For the quiet afternoons, the gentle longing, and knowing every moment waiting for you was worth it.",
+    "tone": "nostalgic",
+    "lyricsSnippet": "I’ll be waiting right here for you, beneath the golden sky...",
+    "accentColor": "#6366f1",
+    "audioUrl": "./audio/Waiting For You (Bonus Track).mp3"
+  },  
   {
     "id": "song-nexz",
     "title": "mchk mchk",
