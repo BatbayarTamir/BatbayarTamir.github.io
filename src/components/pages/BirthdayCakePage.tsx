@@ -235,13 +235,13 @@ export const BirthdayCakePage: React.FC<BirthdayCakePageProps> = ({ herName, isA
           <span>Release A Birthday Sky Lantern</span>
         </div>
         <p className="text-xs text-rose-900/80 mb-3">
-          Type a secret birthday wish or dream. It floats into the night sky and sends directly to his inbox!
+          Type a secret birthday wish or dream. It floats into the night sky and sends directly to my mail!
         </p>
 
         {formState.succeeded ? (
           <div className="p-3.5 rounded-2xl bg-amber-50 border border-amber-200 text-amber-900 text-xs flex items-center gap-2">
             <Check className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-            <span>Your wish has been released to the stars and delivered straight to his heart! ✨🏮</span>
+            <span>Your wish has been released to the stars and delivered straight to me ✨🏮</span>
           </div>
         ) : (
           <form onSubmit={onFormSubmit} className="space-y-2">
