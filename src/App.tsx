@@ -570,21 +570,6 @@ export default function App() {
       <LiveBackground isIntro={isIntroActive} theme={activeTheme} isNexzTheme={isNexzTheme} />
 
       {/* NEXZ Theme Easter Egg Badge for Saucin & Cyber */}
-      {activeTheme === 'nexz-saucin' && (
-        <div className="fixed top-3.5 left-1/2 -translate-x-1/2 z-40 px-4 py-1.5 rounded-full bg-red-950/95 text-yellow-300 border-2 border-yellow-400 shadow-[0_0_25px_rgba(234,179,8,0.5)] text-[10px] sm:text-xs font-mono font-bold tracking-wider flex items-center gap-2 animate-pulse backdrop-blur-md">
-          <span className="text-red-400 text-sm">🥫</span>
-          <span>NEXZ EASTER EGG // 'SAUCIN' KETCHUP & MUSTARD THEME</span>
-          <span className="text-yellow-400 text-sm">🌭</span>
-        </div>
-      )}
-
-      {activeTheme === 'nexz-cyber' && (
-        <div className="fixed top-3.5 left-1/2 -translate-x-1/2 z-40 px-3.5 py-1 rounded-full bg-slate-950/95 text-cyan-300 border border-cyan-400/70 shadow-[0_0_20px_rgba(6,182,212,0.4)] text-[10px] sm:text-xs font-mono font-bold tracking-wider flex items-center gap-1.5 animate-pulse backdrop-blur-md">
-          <span className="text-emerald-400">⚡</span>
-          <span>NEXZ EASTER EGG // 'MCHK MCHK' CYBER THEME</span>
-          <span className="text-emerald-400">⚡</span>
-        </div>
-      )}
 
       {/* Unique Bouquet of Flowers Blooming Transition to Next Page */}
       <FlowerBloomTransitionOverlay
