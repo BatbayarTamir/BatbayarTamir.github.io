@@ -1,0 +1,214 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-handwriting: 'Caveat', cursive;
+}
+
+:root {
+  --accent-pink: #e11d48;
+  --accent-rose: #be123c;
+  --accent-soft: #ffe4e6;
+  --text-dark: #881337;
+}
+
+/* Custom scrollbar hiding */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Glassmorphism card */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.68);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1.5px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 20px 45px -12px rgba(225, 29, 72, 0.12), 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.glass-panel-warm {
+  background: rgba(255, 253, 250, 0.78);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1.5px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 25px 50px -12px rgba(225, 29, 72, 0.15);
+}
+
+/* Floating animation */
+@keyframes gentleFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+.animate-gentle-float {
+  animation: gentleFloat 5s ease-in-out infinite;
+}
+
+/* Vinyl spin */
+@keyframes spinVinyl {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spinning-vinyl {
+  animation: spinVinyl 3.5s linear infinite;
+}
+
+.paused-vinyl {
+  animation-play-state: paused;
+}
+
+/* Pulse glow */
+@keyframes heartGlow {
+  0%, 100% { transform: scale(1); filter: drop-shadow(0 0 8px rgba(244, 63, 94, 0.4)); }
+  50% { transform: scale(1.08); filter: drop-shadow(0 0 16px rgba(244, 63, 94, 0.75)); }
+}
+
+.animate-heart-glow {
+  animation: heartGlow 2.4s ease-in-out infinite;
+}
+
+/* Candle flame flicker */
+@keyframes candleFlicker {
+  0%, 100% { transform: scale(1) translate(0, 0) rotate(-1deg); opacity: 0.95; }
+  25% { transform: scale(1.05, 0.95) translate(-1px, -1px) rotate(1deg); opacity: 1; }
+  50% { transform: scale(0.95, 1.08) translate(1px, 0px) rotate(-0.5deg); opacity: 0.9; }
+  75% { transform: scale(1.02, 0.98) translate(-0.5px, -1px) rotate(1.5deg); opacity: 0.98; }
+}
+
+.animate-candle-flame {
+  animation: candleFlicker 0.7s ease-in-out infinite alternate;
+  transform-origin: bottom center;
+}
+
+/* ==========================================================================
+   THEME ADAPTATION: Easter Egg Themes (Cyberpunk & Saucin Ketchup/Mustard)
+   ========================================================================== */
+
+/* 1. NEXZ Cyber Theme ('mchk mchk') */
+.theme-nexz-cyber {
+  color: #ecfeff;
+}
+
+.theme-nexz-cyber .glass-panel,
+.theme-nexz-cyber .glass-panel-warm,
+.theme-nexz-cyber [class*="bg-white/8"],
+.theme-nexz-cyber [class*="bg-white/9"],
+.theme-nexz-cyber [class*="bg-white"] {
+  background-color: rgba(10, 15, 30, 0.9) !important;
+  border-color: rgba(6, 182, 212, 0.45) !important;
+  color: #e0f2fe !important;
+  box-shadow: 0 16px 40px rgba(6, 182, 212, 0.22) !important;
+}
+
+.theme-nexz-cyber h1,
+.theme-nexz-cyber h2,
+.theme-nexz-cyber h3,
+.theme-nexz-cyber [class*="text-rose-950"],
+.theme-nexz-cyber [class*="text-rose-900"],
+.theme-nexz-cyber [class*="text-rose-800"] {
+  color: #67e8f9 !important;
+  text-shadow: 0 0 14px rgba(6, 182, 212, 0.35);
+}
+
+.theme-nexz-cyber [class*="text-rose-700"],
+.theme-nexz-cyber [class*="text-rose-600"] {
+  color: #34d399 !important;
+}
+
+.theme-nexz-cyber [class*="text-rose-500"],
+.theme-nexz-cyber [class*="text-pink-500"] {
+  color: #22d3ee !important;
+}
+
+.theme-nexz-cyber [class*="bg-rose-50"],
+.theme-nexz-cyber [class*="bg-rose-100"] {
+  background-color: rgba(8, 47, 73, 0.65) !important;
+  border-color: rgba(6, 182, 212, 0.4) !important;
+  color: #a5f3fc !important;
+}
+
+.theme-nexz-cyber [class*="from-rose-600"],
+.theme-nexz-cyber [class*="from-rose-500"] {
+  --tw-gradient-from: #06b6d4 !important;
+  --tw-gradient-to: #10b981 !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+  color: #022c22 !important;
+  font-weight: 700;
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.5) !important;
+}
+
+.theme-nexz-cyber [class*="border-rose-"] {
+  border-color: rgba(6, 182, 212, 0.45) !important;
+}
+
+.theme-nexz-cyber [class*="fill-rose-500"] {
+  fill: #06b6d4 !important;
+}
+
+/* 2. NEXZ Saucin Theme ('Saucin' - Red & Golden Mustard Yellow) */
+.theme-nexz-saucin {
+  color: #fef08a;
+}
+
+.theme-nexz-saucin .glass-panel,
+.theme-nexz-saucin .glass-panel-warm,
+.theme-nexz-saucin [class*="bg-white/8"],
+.theme-nexz-saucin [class*="bg-white/9"],
+.theme-nexz-saucin [class*="bg-white"] {
+  background-color: rgba(45, 8, 12, 0.92) !important;
+  border-color: rgba(234, 179, 8, 0.65) !important;
+  color: #fef9c3 !important;
+  box-shadow: 0 16px 45px rgba(220, 38, 38, 0.35), 0 0 25px rgba(234, 179, 8, 0.2) !important;
+}
+
+.theme-nexz-saucin h1,
+.theme-nexz-saucin h2,
+.theme-nexz-saucin h3,
+.theme-nexz-saucin [class*="text-rose-950"],
+.theme-nexz-saucin [class*="text-rose-900"],
+.theme-nexz-saucin [class*="text-rose-800"] {
+  color: #facc15 !important;
+  text-shadow: 0 0 14px rgba(234, 179, 8, 0.35);
+}
+
+.theme-nexz-saucin [class*="text-rose-700"],
+.theme-nexz-saucin [class*="text-rose-600"] {
+  color: #ef4444 !important;
+}
+
+.theme-nexz-saucin [class*="text-rose-500"],
+.theme-nexz-saucin [class*="text-pink-500"] {
+  color: #fbbf24 !important;
+}
+
+.theme-nexz-saucin [class*="bg-rose-50"],
+.theme-nexz-saucin [class*="bg-rose-100"] {
+  background-color: rgba(127, 29, 29, 0.7) !important;
+  border-color: rgba(234, 179, 8, 0.5) !important;
+  color: #fef08a !important;
+}
+
+.theme-nexz-saucin [class*="from-rose-600"],
+.theme-nexz-saucin [class*="from-rose-500"] {
+  --tw-gradient-from: #dc2626 !important;
+  --tw-gradient-to: #eab308 !important;
+  --tw-gradient-stops: var(--tw-gradient-from), #f59e0b, var(--tw-gradient-to) !important;
+  color: #260204 !important;
+  font-weight: 700;
+  box-shadow: 0 0 20px rgba(234, 179, 8, 0.5) !important;
+}
+
+.theme-nexz-saucin [class*="border-rose-"] {
+  border-color: rgba(234, 179, 8, 0.5) !important;
+}
+
+.theme-nexz-saucin [class*="fill-rose-500"] {
+  fill: #dc2626 !important;
+}
+

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "song-1",
+    "title": "Dear My Feelings",
+    "artist": "IVE",
+    "duration": "3:24",
+    "dedication": "The melody that plays in my head every time you smile at me.",
+    "tone": "dreamy",
+    "lyricsSnippet": "Like a soft spring breeze finding its way home...",
+    "accentColor": "#fb7185",
+    "audioUrl": "./audio/song-1.mp3"
+  },
+  {
+    "id": "song-waiting",
+    "title": "Waiting for you",
+    "artist": "Alex G",
+    "duration": "3:12",
+    "dedication": "For the quiet afternoons, the gentle longing, and knowing every moment waiting for you was worth it.",
+    "tone": "nostalgic",
+    "lyricsSnippet": "I’ll be waiting right here for you, beneath the golden sky...",
+    "accentColor": "#6366f1",
+    "audioUrl": "./audio/song-waiting.mp3"
+  },
+  {
+    "id": "song-5",
+    "title": "Lofi Starry Night",
+    "artist": "Midnight Chimes",
+    "duration": "2:58",
+    "dedication": "For our late night conversations when neither of us wants to say goodbye.",
+    "tone": "dreamy",
+    "lyricsSnippet": "Underneath a blanket of stars, counting my blessings one by one...",
+    "accentColor": "#ec4899",
+    "audioUrl": "./audio/song-5.mp3"
+  },
+  {
+    "id": "song-nexz",
+    "title": "mchk mchk",
+    "artist": "NEXZ",
+    "duration": "3:05",
+    "dedication": "⚡ Secret Easter Egg 1: Turn up the volume, high-voltage cyber groove!",
+    "tone": "energetic",
+    "lyricsSnippet": "Feel the rhythm bouncing, electrifying the heartbeat with high-voltage groove...",
+    "accentColor": "#06b6d4",
+    "audioUrl": "./audio/song-nexz.mp3"
+  },
+  {
+    "id": "song-saucin",
+    "title": "Saucin",
+    "artist": "NEXZ",
+    "duration": "2:52",
+    "dedication": "🥫 Secret Easter Egg 2: Drip, groove, and sauce it up with the red & yellow vibe!",
+    "tone": "energetic",
+    "lyricsSnippet": "Saucin on the beat, pure heat dripping with the mustard and spice...",
+    "accentColor": "#eab308",
+    "audioUrl": "./audio/song-saucin.mp3"
+  }
+]

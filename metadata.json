@@ -1,0 +1,6 @@
+{
+  "name": "Just a little gift for you.",
+  "description": "It took me awhile and I really poured my time in so enjoy!",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
