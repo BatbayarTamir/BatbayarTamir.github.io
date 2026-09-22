@@ -1,0 +1,73 @@
+name: Deploy to GitHub Pages
+
+on: [push, workflow_dispatch]
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Locate project directory
+        id: locate
+        run: |
+          if [ -f "src/main.tsx" ]; then
+            echo "dir=." >> $GITHUB_OUTPUT
+            echo "Project root found at: ."
+          else
+            MAIN_FILE=$(find . -maxdepth 4 -name "main.tsx" -not -path "*/node_modules/*" | head -n 1)
+            if [ -n "$MAIN_FILE" ]; then
+              SRC_DIR=$(dirname "$MAIN_FILE")
+              DIR=$(dirname "$SRC_DIR")
+              echo "dir=$DIR" >> $GITHUB_OUTPUT
+              echo "Project root found via src/main.tsx at: $DIR"
+            elif [ -f "package.json" ]; then
+              echo "dir=." >> $GITHUB_OUTPUT
+              echo "::error::'package.json' exists, but 'src/main.tsx' is missing! Please upload the 'src/' folder to your repository."
+              echo "Current directory contents:"
+              ls -la
+            else
+              echo "::error::Neither 'src/main.tsx' nor 'package.json' was found. Please ensure your project files are pushed/uploaded to the repository."
+              exit 1
+            fi
+          fi
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        working-directory: ${{ steps.locate.outputs.dir }}
+        run: npm install --legacy-peer-deps
+
+      - name: Build
+        working-directory: ${{ steps.locate.outputs.dir }}
+        run: npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ steps.locate.outputs.dir == '.' && './dist' || format('{0}/dist', steps.locate.outputs.dir) }}
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
